@@ -1,0 +1,55 @@
+Q2:
+ public static void main(String[] args) {
+       Student s1 = new Student();
+       s1.age = 10;
+       s1.name = "A";
+
+       Student s2 = new Student();
+       s2.age = 20;
+       s2.name = "B";
+
+       swap(s1, s2);
+
+       s1.display();
+   }
+
+   private static void swap(Student s1, Student s2) {
+       int tage = s1.age;
+       s1.age = s2.age;
+       s2.age = tage;
+
+       String tname = s1.name;
+       s1.name = s2.name;
+       s2.name = tname;
+   }
+
+   NOTE: IN this the s1 passed in swap object in a local variable that is pointing
+   to actual s1 student object
+   So, it can access the the data member by another variable(means local s1 variable)
+   So that why the val get swapped
+
+   Q3:
+    public static void main(String[] args) {
+          Student s1 = new Student();
+          s1.age = 10;
+          s1.name = "A";
+
+          Student s2 = new Student();
+          s2.age = 20;
+          s2.name = "B";
+
+          swap(s1, s2);
+
+          s1.display();
+      }
+
+      private static void swap(Student s1, Student s2) {
+           Student temp = s1;
+           s1 = s2;
+           s2 = temp;
+      }
+   }
+
+   But in this question the local value s1 is swapped by local variable s2.
+   And it get lost as the swap function ends
+   So no actual swapping is done
