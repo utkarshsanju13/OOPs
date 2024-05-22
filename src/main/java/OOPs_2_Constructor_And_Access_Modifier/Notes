@@ -27,6 +27,68 @@ ACCESS MODIFIERS:
 -default        yes                 yes                     no                      no                            no
 or package private
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+What keyword is used to make class level data members : STATIC
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OBJECT CLONING:
+--cloning can be done using two methods
+    1.implementing clone method
+        1.1: shallow copy
+        1.2: deep copy
+    2.using Copy constructor
+        2.1: deep copy
+
+IMPLEMENTING CLONE METHOD:
+
+1.1--Creating a copy using the clone() method(Shallow Copy)
+See example CopyConstructorUsingCloneMethod
+==In shallow copy only the primitive type value is copied to the new object primitive type.
+
+Note: But due to the Test object c being inside Test2, the primitive types have achieved deep copy but this Test object c is still shared between t1 and t2.
+To overcome that we explicitly do a deep copy for object variable c, which is discussed later.
+
+1.2--Deep Copy
+See example CopyConstructorUsingCloneMethod
+
+COPY CONSTRUCTOR:
+--special type of constructor.. creates an object using another object of the same Java class.
+--It returns a duplicate copy of an existing object of the class.
+--We can assign a value to the final field but the same cannot be done while using the clone() method.
+-- It is used to create a deep copy of object ( we can initialize the final variable value also)  See class : CopyConstructorExample
+--Avoid the use of Object.clone() method.
+--There is no need for typecasting.
+
+DRAWABACK:
+Note: It cannot be inherited by the subclasses. If we try to initialize a child class object
+from a parent class reference, we face the casting problem when cloning it with the copy constructor.
+Example see CopyConstructorDrawback class.
+
+
+Copy Constructor VS Clone() method
+--it is necessary to import cloneable class in clone() method technique: the method may throw CloneNotSupportedException So, handling the exception is a complex task
+--the object return by the clone() method must be type casted while in copy constructor no type casting require
+---We can't assign the value if the field is final while in the copy constructor. we can assign the value of final field.
+--In copy constructor we assign value explicitly where in clone() method the Object.clone() method assign its value ( more processing is done in copy constructor)
+
+---------------------------------------------------------------------------------------------------
+
+Q: Create a Node and Declare copy constructor and This constructor should make a deep copy of the passed node.
+Ans: Node class
+
+Q: how to call another constructor from a constructor
+ans: Student class
+
+NOTE:
+i. Static Methods can not use non static data members also
+i. Non-Static Methods can use static data members also
+ii. Static Methods can not use this keyword ( this() method only be used in constructor)
+ii. Static data members can not be accessed only via Class name
+
+
+
+
 
 
 
