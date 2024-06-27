@@ -30,6 +30,65 @@ or package private
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 What keyword is used to make class level data members : STATIC
 
+
+CONSTRUCTOR:
+--Construct has no return type, it always return a object
+--Java identifies teh constructor with constructor name and parameterised data type constructor
+Car(int noOfSeats, int engineSize){
+
+}
+Car(int engineSize, int noOfSeats){
+
+}
+
+--Above both the constructor are same
+But having constructor with (int, String) & (String, int) are two different in java
+
+
+default vs no-args Constructor
+--both have a same definition style but in default constructor. No class level variable is initialize
+all the value ini initialize the default value
+--But in no-args constructor, we can initialize the class level variable with some constant value
+
+
+Eg:
+Class Car{
+    int noOfSeats;
+    String name;
+
+    //default constructor
+    public Car(){
+
+    }
+
+    //no-args constructor
+    public Car(){
+    this.noOfSeats = 10;
+    this.name = "Maruti";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 OBJECT CLONING:
@@ -81,10 +140,10 @@ Q: how to call another constructor from a constructor
 ans: Student class
 
 NOTE:
-i. Static Methods can not use non static data members also
-i. Non-Static Methods can use static data members also
-ii. Static Methods can not use this keyword ( this() method only be used in constructor)
-ii. Static data members can not be accessed only via Class name
+i. Static_FInal Methods can not use non static data members also
+i. Non-Static_FInal Methods can use static data members also
+ii. Static_FInal Methods can not use this keyword ( this() method only be used in constructor)
+ii. Static_FInal data members can not be accessed only via Class name
 
 
 
