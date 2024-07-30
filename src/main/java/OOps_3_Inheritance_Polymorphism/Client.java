@@ -29,17 +29,17 @@ public class Client {
         user.greetFromUser();
 //        user.greetFromMentor(); //additional feature are not being used
 
-//        Mentor mentor = (Mentor) new User(); //Downcasting (we have to explicit do the casting)
+        Mentor mentor = (Mentor) new User(); //Downcasting (we have to explicit do the casting)
 //        mentor.greetFromMentor(); //runtime exception
 //        mentor.greetFromUser(); //runtime exception
 
         /*NOTE: Downcasting is availbale for other datatype
                 eg:
-        for primitive datatype:*/
+        for primitive datatype:
         long l = 120;
         int i = (int)l;
         System.out.println(l);
-
+*/
 
 
 

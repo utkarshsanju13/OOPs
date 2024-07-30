@@ -11,6 +11,7 @@ public class Main {
 //        ExecutorService e1 = Executors.newFixedThreadPool(10);
 
         ExecutorService e = Executors.newCachedThreadPool();
+//        ExecutorService es = Executors.newCachedThreadPool();
         for(int i = 1; i <= 100; i++){
             NumberPrinter nmp = new NumberPrinter(i);
 //            e1.execute(nmp);
