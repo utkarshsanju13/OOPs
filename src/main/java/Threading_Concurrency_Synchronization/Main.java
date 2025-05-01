@@ -4,10 +4,10 @@ public class Main {
 
     //In this case only a single thread is created
     public static void main(String[] args) {
-        int a =10;
-        int b = 20;
-        doSomething();  //Run by main thread
-        System.out.println("Hello World !" + Thread.currentThread().getName());
+//        int a =10;
+//        int b = 20;
+//        doSomething();  //Run by main thread
+//        System.out.println("Hello World !" + Thread.currentThread().getName());
 
     }
 

@@ -66,4 +66,39 @@ public class _203_Remove_Linked_List_Elements {
         }
         System.out.println("null");
     }
+
+    public Node rotateRight(Node head, int k) {
+
+        if(head == null || head.next == null || k==0)
+            return head;
+
+        Node temp = head;
+        int size = 0;
+        Node tail = temp;
+
+
+        while(temp!=null){
+            if(temp.next == null)
+                tail=temp;
+            size++;
+            temp = temp.next;
+        }
+
+        temp = head;
+        k = k%size;
+
+        if(k ==0)
+            return head;
+
+        for(int i = 1; i <= size-k-1; i++){
+            temp = temp.next;
+        }
+
+        Node head2 = temp.next;
+        temp.next = null;
+        tail.next = head;
+
+        return head2;
+
+    }
 }
