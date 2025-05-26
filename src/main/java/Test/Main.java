@@ -83,6 +83,8 @@ public class Main {
 
        Emp e1 = new Emp(new Address(new gali(61),"1/M pushpanjali nagar"));
         System.out.println(e1);
+        System.out.println(e1);
+        System.out.println(e1);
 
         Address temp = e1.getAdress();
         temp.setGali_no(new gali(65));
