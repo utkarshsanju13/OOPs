@@ -6,10 +6,10 @@ public class CopyConstructorExample {
 
         Fruit f = new Fruit(20,"mango","Summer");
 
-        System.out.println("org fruit:" + f.getFprice() + " "+ f.getFname() + " "+ f.getFseason());
+        System.out.println("Fruits reference : " + f + "org fruit:" + f.getFprice() + " "+ f.getFname() + " "+ f.getFseason());
 
         Fruit f2 = new Fruit(f);
-        System.out.println("copy fruit:" + f2.getFprice() + " "+ f2.getFname() + " "+ f.getFseason());
+        System.out.println("Fruits reference : " + f2 + " copy fruit:" + f2.getFprice() + " "+ f2.getFname() + " "+ f.getFseason());
     }
 
 }

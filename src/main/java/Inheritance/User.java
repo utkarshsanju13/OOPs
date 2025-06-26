@@ -1,14 +1,40 @@
 package Inheritance;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+
 public class User {
+    public int myMethod() {
+        try {
+            return 1;
+        } catch (Exception e) {
+            return 2;
+        } finally {
+            return 3;
+        }
+    }
 
     public static void main(String[] args) {
 
-        Parent p = new Parent();
-        p.greet();
+//        Parent p = new Parent();
+//        p.greet();
+//
+//        Child c = new Child();
+//        c.greet();
 
-        Child c = new Child();
-        c.greet();
+        User u = new User();
+        System.out.println(u.myMethod());
+
+
+        try (FileInputStream fis = new FileInputStream("user.sr")) {
+            // use fis
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("DEBUG....");
+//
+
+
 //try{
 //    Class cls = Class.forName("User");
 //}
@@ -33,18 +59,18 @@ public class User {
 //        long l1 = 10;
 //        int i1 = (int) l1;
 
-try{
-        Class cls = Class.forName("User");
-
-        // Creating object of main class
-        // using instance method
-    User obj = (User)cls.newInstance();
-
-  } catch (Exception e) {
-
-    // Display the exception along with line number
-    // using printStacktrace() method
-    e.printStackTrace();
-}
+//try{
+//        Class cls = Class.forName("User");
+//
+//        // Creating object of main class
+//        // using instance method
+//    User obj = (User)cls.newInstance();
+//
+//  } catch (Exception e) {
+//
+//    // Display the exception along with line number
+//    // using printStacktrace() method
+//    e.printStackTrace();
+//}
     }
 }

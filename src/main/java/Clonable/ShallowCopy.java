@@ -29,10 +29,6 @@ class Person implements  Cloneable{
          p.address = (Address) address.clone();
 
          return p;
-
-
-
-
     }
 
 }
