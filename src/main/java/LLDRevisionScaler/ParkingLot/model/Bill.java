@@ -11,7 +11,7 @@ public class Bill {
     private PaymentStatus status; //another payment model can be created for this
     private double amount; //another payment model can be created for this
 //    private Payment paymentDetails;
-
+    
     public int getId() {
         return id;
     }
