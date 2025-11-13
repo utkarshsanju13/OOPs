@@ -1,6 +1,6 @@
 package JavaCollection.Map;
 
-import Java8Feature.Lambda_Streams.Streams.Department;
+import Java8Feature.Streams.Department;
 
 import java.util.Comparator;
 import java.util.TreeMap;

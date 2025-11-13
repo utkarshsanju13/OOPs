@@ -4,13 +4,22 @@ public class Mentor extends User{
 
     public int rating;
 
-    public Mentor(int id) {
-        super(id);
-    }
 
     public Mentor(){
 
     }
+
+    //Case 2:
+//    public Mentor(int rating){
+////        super(); //Implicitly written
+//        this.rating = rating;
+//    }
+
+    public Mentor(int id) {
+        super(id);
+    }
+
+
 
 
 //    public Mentor(int id) {
@@ -22,6 +31,8 @@ public class Mentor extends User{
 //        this.rating = rating;
 //    }
 
+
+
     public void greetAll(){
         super.greet();
     }
@@ -30,5 +41,8 @@ public class Mentor extends User{
         System.out.println("Hello from mentor");
     }
 
-
+//    @Override
+//    public void greetFromUser() {
+//        System.out.println("Overriden method of greet from user from mentor class");
+//    }
 }

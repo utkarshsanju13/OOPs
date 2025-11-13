@@ -23,6 +23,8 @@ public class Client {
 
         User u = new User("B+");
         System.out.println(u.bloodGroup+ " "+ u.galaxy); //B+ Milky-Way
+        User newUser = new User("A+");
+        System.out.println(newUser.bloodGroup + " "+ newUser.galaxy);
 
         /*Note:
         --> If a value of a attribute is common/constant for all the object then make it to be static final

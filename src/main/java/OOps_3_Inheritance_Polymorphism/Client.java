@@ -26,10 +26,11 @@ public class Client {
         //Polymorphism
 
         User user = new Mentor(); //Upcasting (implicit i.e. no casting is required)
-        user.greetFromUser();
+//        user.greetFromUser();
 //        user.greetFromMentor(); //additional feature are not being used
 
         Mentor mentor = (Mentor) new User(); //Downcasting (we have to explicit do the casting)
+//        mentor.greetFromUser();
 //        mentor.greetFromMentor(); //runtime exception
 //        mentor.greetFromUser(); //runtime exception
 
