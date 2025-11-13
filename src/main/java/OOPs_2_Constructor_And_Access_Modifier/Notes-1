@@ -106,7 +106,8 @@ See example CopyConstructorUsingCloneMethod
 ==In shallow copy only the primitive type value is copied to the new object primitive type.
 
 Note: But due to the Test object c being inside Test2, the primitive types have achieved deep copy but this Test object c is still shared between t1 and t2.
-To overcome that we explicitly do a deep copy for object variable c, which is discussed later.
+To overcome that we explicitly do a deep copy for object variable c,
+
 
 1.2--Deep Copy
 See example CopyConstructorUsingCloneMethod
